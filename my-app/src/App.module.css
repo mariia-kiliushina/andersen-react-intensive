@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: #326cf3;
+}
+
+html {
+  min-height: 100vh;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: unset;
+}
+
+.formWrapper {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+.groupedInputsWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: left;
+  padding: 20px;
+  border: 1px solid rgb(255, 255, 255);
+}

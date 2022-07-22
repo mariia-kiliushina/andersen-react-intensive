@@ -1,15 +1,16 @@
 import React from 'react';
+import styles from './Button.module.css';
 
 class Button extends React.Component {
-  constructor() {
-    super();
-    this.state = { foo: 'kjh' };
+  constructor(props) {
+    super(props);
   }
   render() {
+    const { buttonName, buttonFunction } = this.props;
     return (
-      <>
-        <button></button>
-      </>
+      <button className={styles.myButton} onClick={() => buttonFunction()}>
+        {buttonName}
+      </button>
     );
   }
 }
