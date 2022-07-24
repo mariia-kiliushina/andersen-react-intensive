@@ -6,10 +6,10 @@ class Button extends React.Component {
     super(props);
   }
   render() {
-    const { buttonName, buttonFunction } = this.props;
+    const { type = 'button', buttonName } = this.props;
     return (
-      <button className={styles.myButton} onClick={() => buttonFunction()}>
-        {buttonName}
+      <button type={type} className={styles.myButton}>
+        {buttonName} {type}
       </button>
     );
   }

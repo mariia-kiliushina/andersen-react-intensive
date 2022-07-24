@@ -2,23 +2,34 @@
 
 textarea {
   resize: none;
+  display: block;
+  width: 100%;
 }
 
 label {
   font-weight: 800;
   color: white;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+}
+input {
+  display: block;
+  width: 100%;
 }
 
 .inputText {
   color: black;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 
 .formInput {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
-  font-size: 26px;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
 }

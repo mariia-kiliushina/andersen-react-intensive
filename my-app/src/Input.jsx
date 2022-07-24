@@ -5,19 +5,20 @@ class Input extends React.Component {
     super(props);
   }
   render() {
-    const { inputLabel, type, isTextArea = false } = this.props;
+    const { inputLabel, type, onChange, name, value, isTextArea = false } = this.props;
 
     if (isTextArea) {
       return (
         <div className={styles.formInput}>
-          <label htmlFor="name">{inputLabel}</label>
+          <label htmlFor={name}>{inputLabel}</label>
           <textarea
-            id="name"
+            id={name}
+            name={name}
             className={styles.inputText}
             rows="7"
-            // cols="77"
             placeholder={inputLabel}
-            // value=""
+            onChange={onChange}
+            value={value}
           />
         </div>
       );
@@ -25,13 +26,15 @@ class Input extends React.Component {
 
     return (
       <div className={styles.formInput}>
-        <label htmlFor="name">{inputLabel}</label>
+        <label htmlFor={name}>{inputLabel}</label>
         <input
-          id="name"
+          id={name}
+          name={name}
           className={styles.inputText}
           type={type}
           placeholder={inputLabel}
-          // value=""
+          onChange={onChange}
+          value={value}
         />
       </div>
     );
